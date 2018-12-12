@@ -15,7 +15,7 @@ print("\n\n*******Data headers before dropping columns*******\n")
 print(bf_df.head(5))
 
 print("\n\n*******Data Manipulation*******\n")
-bf_df.drop(['User_ID','Product_ID','Stay_In_Current_City_Years'],axis=1)
+bf_df.drop(['User_ID','Product_ID','Stay_In_Current_City_Years'],axis=1,inplace=True)
 print("\n\n********Data after dropping unnecessary columns******\n")
 print(bf_df.head(5))
 
